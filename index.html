@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobiles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style> -->
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa fa-motorcycle" aria-hidden="true"></i>
+            <span>SAMRALA AUTOMOBILES</span>
+        </div>
+        <div class="header-left">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="Finance" target="_blank">Finance</a></li>
+                    <li><a href="#" onclick="toggleSection('about')">About Us</a></li>
+                    <li><a href="#" onclick="toggleSection('contact')">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <div class="search-icon">
+                <i class="fas fa-search" onclick="toggleSearchBar()"></i>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/share/15xUURV5P8/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/samralaautodeals" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/7973850653" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="user-profile">
+                <i class="fas fa-user" onclick="toggleLoginForm()"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar" id="search-bar">
+        <input type="text" placeholder="Search..." id="search-input">
+        <button type="button" onclick="performSearch()">Search</button>
+    </div>
+
+    <div class="login-form" id="login-form">
+        <h2>Login</h2>
+        <form id="login" onsubmit="handleLogin(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+
+    <section id="home">
+        <video autoplay muted loop id="bg-video">
+            <source src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Video 2025-03-08 at 6.39.43 PM.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+       
+               <!--banner section-->
+       <section class="home" id="home">
+        <div class="home-content">
+            <h3>Great Bikes Great Deals- <span>Just a Click Away</span></h3>
+            <p>Since 1990, Pre Owned two-Wheeler LUDHIANA,PUNJAB</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+    </section>
+
+
+
+        <!--banner section-->
+        </div>
+    </section>
+
+    <section id="products"><section class="features" id="features">
+        <h2 class="heading">OUR<span> Products</span></h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.36 PM (1).jpeg" alt="yamaha">
+                <h3>Yamaha</h3>
+                <p>Aims to Inspire passion and Adventure.</p>
+                <button>Details</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\royal.jpg.jpeg" alt="Royal Enfield">
+                <h3>Royal Enfield</h3>
+                <p>Made like a Gun Goes like a Bullet.</p>
+                <button>Details</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.39 PM.jpeg" alt="Hero">
+                <h3>Hero</h3>
+                <p>Jab Tak Rahega Samose Mein Aloo, Tab Tak Rahega Hero Ka Naam.</p>
+                <button>Details</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.38 PM.jpeg" alt="Jawa">
+                <h3>Jawa</h3>
+                <p>Forever Heroes Classic Legacy Timeless Rides.</p>
+                <button>Details</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.37 PM.jpeg" alt="Honda">
+                <h3>Honda</h3>
+                <p>Driven by dreams, built for the future.</p>
+                <button>Details</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.39 PM (1).jpeg" alt="Bajaj">
+                <h3>Bajaj</h3>
+                <p>Innovation and performance, making India ride with pride.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.37 PM (2).jpeg" alt="Harley Davidson">
+                <h3>Harley Davidson</h3>
+                <p>All for Freedom. Freedom for All."</p>
+                <button>Details</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.37 PM (3).jpeg" alt="TVS">
+                <h3>TVS</h3>
+                <p>Experience performance, innovation, and trust with TVS Motors.</p>
+                <button>Details</button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.37 PM (1).jpeg" alt="OLA Electric">
+                <h3>OLA Electric</h3>
+                <p>Ride with power, style, and Ola trusted engineering.</p>
+                <button><Details></Details></button>
+            </div>
+            <div class="product">
+                <img src="c:\Users\GNIMT\Desktop\automobile\WhatsApp Image 2025-03-08 at 6.39.36 PM (2).jpeg" alt="Ather Energy">
+                <h3>Ather Energy</h3>
+                <p>Smart, powerful, and electric—ride the future with Ather.</p>
+                <button><Details></Details></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <h2 class="cate">SHOP BY <span>CATEGORIES</span></h2>
+        <div class="category-list">
+            <div class="category" id="Petrol-Bike">
+                <h3>Petrol-Bike</h3>
+                <button onclick="addProduct('spoon')">Add Product</button>
+                <ul class="products-list">
+                    <!-- Products will be added here -->
+                </ul>
+            </div>
+            <div class="category" id="Petrol-Scooty">
+                <h3>Petrol-Scooty</h3>
+                <button onclick="addProduct('cooker.png')">Add Product</button>
+                <ul class="products-list">
+                    <!-- Products will be added here -->
+                </ul>
+            </div>
+            <div class="category" id="Sports-Bike">
+                <h3>Sports-Bike</h3>
+                <button onclick="addProduct('pan')">Add Product</button>
+                <ul class="products-list">
+                    <!-- Products will be added here -->
+                </ul>
+            </div>
+            <div class="category" id="Bullet">
+                <h3>Bullet</h3>
+                <button onclick="addProduct('bowl')">Add Product</button>
+                <ul class="products-list">
+                    <!-- Products will be added here -->
+                </ul>
+            </div>
+            <div class="category" id="Electric">
+                <h3>Electric</h3>
+                <button onclick="addProduct('bowl')">Add Product</button>
+                <ul class="products-list">
+                    <!-- Products will be added here -->
+                </ul>
+            </div>
+    </section>
+
+    <section id="about" class="hidden-section">
+        <a href="javascript:void(0);" onclick="showAbout()">About Us</a>
+
+        <h2>About Us</h2>
+        <p>Welcome to GLVAN IMPEX, your number one source for all cookware products. We're dedicated to giving you the very best of kitchenware, with a focus on quality, customer service, and uniqueness.</p>
+        <p>Founded in 2020, GLVAN IMPEX has come a long way from its beginnings. When we first started out, our passion for providing the best cookware for our customers drove us to do intense research, and gave us the impetus to turn hard work and inspiration into a booming online store. We now serve customers all over the world and are thrilled to be a part of the eco-friendly, fair trade wing of the kitchenware industry.</p>
+        <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+        <p>Sincerely,</p>
+        <p>The GLVAN IMPEX Team</p>
+    </section>
+    
+
+    <section id="contact" class="hidden-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="contact">Contact:</label>
+            <input type="contact" id="contact" name="contact" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="privacy" class="hidden-section">
+        <h2>Privacy Policy</h2>
+        <p>At GLVAN IMPEX, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your information when you visit our website and use our services.</p>
+        <p><strong>Information Collection:</strong> We collect information that you provide to us directly, such as when you create an account, place an order, or contact us for support. This information may include your name, email address, phone number, shipping address, and payment information.</p>
+        <p><strong>Information Use:</strong> We use the information we collect to fulfill your orders, provide customer support, and improve our services. We may also use your information to send you promotional materials and updates about our products.</p>
+        <p><strong>Information Sharing:</strong> We do not sell or rent your personal information to third parties. We may share your information with trusted partners who assist us in operating our website, conducting our business, or serving our customers, as long as those parties agree to keep this information confidential.</p>
+        <p><strong>Security:</strong> We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no data transmission over the internet or electronic storage system can be guaranteed to be 100% secure.</p>
+        <p>If you have any questions or concerns about our Privacy Policy, please contact us at info@glvanimpex.com.</p>
+    </section>
+
+    <section id="faq" class="hidden-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <h3>1. What is GLVAN IMPEX?</h3>
+        <p>GLVAN IMPEX is an online store specializing in high-quality cookware products. We offer a wide range of kitchenware to meet all your cooking needs.</p>
+        <h3>2. How do I place an order?</h3>
+        <p>You can place an order by browsing our products, adding items to your cart, and proceeding to checkout. You will need to create an account or log in to complete your purchase.</p>
+        <h3>3. What payment methods do you accept?</h3>
+        <p>We accept various payment methods, including credit/debit cards, PayPal, and other secure payment options.</p>
+        <h3>4. How long does shipping take?</h3>
+        <p>Shipping times vary depending on your location and the shipping method selected. Typically, orders are processed and shipped within 3-5 business days.</p>
+        <h3>5. Can I return or exchange a product?</h3>
+        <p>Yes, we offer a hassle-free return and exchange policy. If you are not satisfied with your purchase, please contact our customer support within 30 days of receiving your order to initiate a return or exchange.</p>
+        <h3>6. How can I contact customer support?</h3>
+        <p>You can contact our customer support team by emailing info@glvanimpex.com or using the contact form on our website.</p>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="exchange">Exchange</a></li>
+                    <li><a href="#" onclick="toggleSection('about')">About Us</a></li>
+                    <li><a href="#" onclick="toggleSection('contact')">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <a href="https://mail.google.com/mail/?view=cm&to=gursimransinghbhatia4@gmail.com"  target="_blank"style="color: white;">gursimransinghbhatia4@gmail.com</a>
+                <p>Phone: +91 7973850653</p>
+                <p>Address: SHOP NO: 19-55 Model Town, LUDHIANA 141002</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/share/15xUURV5P8/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/samralaautodeals" target="_blank"><i class="fab fa-instagram"></i></a>                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/7973850653" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="footer-legal">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" onclick="toggleSection('privacy')">Privacy Policy</a></li>
+                    <li><a href="#" onclick="toggleSection('terms')">Terms of Service</a></li>
+                    <li><a href="#" onclick="toggleSection('faq')">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="whatsapp-join">
+                <h3>Join us on <i class="fab fa-whatsapp"></i> WhatsApp</h3>
+                <p>Get Your Old Vehical Exchange And Take Any Vehical With The Best Deals and Price <br> right in your WhatsApp.</p>
+            <p>&copy; 2025 samrala auto deals. All rights reserved.</p>
+          
+
+            <a href="https://wa.me/7973850653" class="whatsapp-icon" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <!-- Font Awesome for Icons -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
